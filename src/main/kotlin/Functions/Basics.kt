@@ -42,7 +42,6 @@ fun main() {
     getUserInfo2(3, "Umut", "UGUZLAR", "Istanbul", "Turkiye")
 
 
-
 }
 
 /**
@@ -82,9 +81,22 @@ fun getUserInfo2(key: Int, vararg userInfo: String) {
  */
 
 val userList = arrayOfNulls<String>(5)
+
 // Single Expression kullanimi
 fun getListCount(): Int = userList.size
+
 // Normal kullanim
 fun getListCount2(): Int {
     return userList.size
+}
+
+/**
+ *      Default degeri olan parametrelere sahip bir fonksiyon Java siniflarindan cagrilacaksa eger,
+ *      bu fonksiyona @JvmOverLoads annotationi verilmelidir. Boylece yazilan kod Jvm'e hazir hale gelir.
+ *      Ilgili fonksiyonun tum varyasyonlari yazilir. (overload edilir)
+ */
+
+@JvmOverloads
+fun print(message: String = "Message") {
+    println(message)
 }
