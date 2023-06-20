@@ -49,7 +49,7 @@ fun main() {
     val result2 = "4".extPlus("9")
 
     /**
-     *      Extension functionlar bir classin icerisidne yazildilarsa kullanim alani sadece o classin icerisi olur.
+     *      Extension functionlar bir classin icerisinde yazildilarsa kullanim alani sadece o classin icerisi olur.
      *      Classin disinda, global cagrim yapilamaz.
      *      Int.extToString() methodu Shape classi icinde yazilmistir. Dolayisiyla shape classi disinda erisilemez.
      */
