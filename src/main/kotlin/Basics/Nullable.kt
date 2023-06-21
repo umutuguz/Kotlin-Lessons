@@ -1,4 +1,4 @@
-package `2 Basics`
+package Basics
 
 fun main() {
     val number: Int? = null
