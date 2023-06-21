@@ -24,7 +24,7 @@ package Classes
  */
 open class Shape(val name: String) {
     var mColor: String = " "
-    var mEdgeCount: Int = 0
+    open var mEdgeCount: Int = 0
 
     constructor(name: String, color: String) : this(name) {
         mColor = color
@@ -56,8 +56,16 @@ open class Shape(val name: String) {
 class Rectangle(name: String) : Shape(name) {
 
     fun changeColor() {
-
+        mColor
+        mEdgeCount
+        drawShape()
+        calculateArea()
     }
+
+    override var mEdgeCount: Int
+        get() = super.mEdgeCount
+        set(value) {}
+
 
     override fun drawShape() {
 //        drawShape()
