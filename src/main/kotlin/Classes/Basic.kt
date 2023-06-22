@@ -20,8 +20,12 @@ package Classes
  *
  *      Not: Hicbir constructor blogu yazilmasa bile init calisacaktir.
  *      Default olarak bos bir constructor olusturulur eger biz olusturmadiysak.
+ *
+ *      Onemli not: Classlarin primary constructorinda val var tanimi yapilmazsa o degiskene class icerisinde
+ *      init haric bir yerde ulasilamaz ayni sekilde mainde obje referansi ile de ulasilamaz. Ulasmak istersen val kullan
+ *      valli kullanim best practicesimsi denebilir.
  */
-class Car(wheelCount: Int, color: String = "Red") {
+class Car(val wheelCount: Int, color: String = "Red") {
 
     private val mWheelCount: Int
     private val mColor = color
