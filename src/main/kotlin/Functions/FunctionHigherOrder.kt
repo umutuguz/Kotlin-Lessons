@@ -6,9 +6,9 @@ import kotlin.concurrent.schedule
 
 //fun main(args: Array<String>) {
 
-//    printName("Gökhan")
+//    printName("Umut")
 
-//    printTotalName("${printName("Gökhan")}")
+//    printTotalName("${printName("Umut")}")
 //    printTotalName("String")
 //    printTotalName({
 //        return "Ad: $name"
@@ -26,8 +26,8 @@ import kotlin.concurrent.schedule
 //}
 
 fun main() {
-    val name = "Gökhan"
-    val surName = "ÖZTÜRK"
+    val name = "Umut"
+    val surName = "UGUZLAR"
     val fullName = name + " " + surName
 
     // Iki adet normal fonksiyon ornegi

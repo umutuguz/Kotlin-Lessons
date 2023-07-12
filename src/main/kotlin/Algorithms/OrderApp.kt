@@ -12,10 +12,10 @@ class Noodles(itemCount: Int) : Food("Noodles", 10.0, itemCount) {
 
 class Vegetables(itemCount: Int, private vararg val toppings: String) : Food("Vegetables", 2.5, itemCount) {
     override fun toString(): String {
-        if (toppings.isEmpty()) {
-            return "$name: Chef's Special"
+        return if (toppings.isEmpty()) {
+            "$name: Chef's Special"
         } else {
-            return "$name: ${toppings.joinToString(", ")}"
+            "$name: ${toppings.joinToString(", ")}"
         }
     }
 
