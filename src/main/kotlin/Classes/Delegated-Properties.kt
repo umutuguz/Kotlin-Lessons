@@ -9,7 +9,10 @@ class CardDetailFragment {
     val userNonLazy: User5 = User5()
     var userNonLazy2: User5 = User5()
 
-
+    /*
+            by lazy kullaniminda degiskenin return tipine ayni degerde bi degiskenin lambda expressionun son
+            satirinda verilmesi gerekmektedir. Bu ornekte User5().
+     */
     val user: User5 by lazy(LazyThreadSafetyMode.PUBLICATION) {  // by lazy val ile kullanilir.
         println("User5 Init")
         User5()
@@ -24,7 +27,7 @@ class CardDetailFragment {
 
         println("name: ${user.name}, surName: ${user.surName}")
 
-        if (this::user2.isInitialized.not()) {
+        if (this::user2.isInitialized.not()) {  // initiliazed edilip edilmedigi kontrol edilmelidir.
             user2 = User5()
         }
 
