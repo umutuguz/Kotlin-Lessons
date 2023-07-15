@@ -16,6 +16,9 @@ import kotlin.properties.Delegates
  *
  *      LiveData pbservalbe patterni ile calisir.
  *
+ *      Not: inline ile higher order kullanimi yapmak interfaceli kullanimdan daha performanslidir.
+ *      Arka planda functionin nesnesi olusmamis olur.
+ *
  */
 
 class User85 {
